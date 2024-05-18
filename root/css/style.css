@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #ff7272;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    font-size: 14px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3d69f;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.content {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    font-family: 'Sigmar One', cursive;
+}
+
+.text {
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+.carousel-img {
+    width: 65%;
+    border-radius: 20px;
+    margin-left: 15%;
+}
+
+.bg-mostaza {
+    background-color: #FFDB58;
+}
+
+.bg-ketchup {
+    background-color: #BF0A30;
+}
+
+.btn-ketchup {
+    background-color: #BF0A30;
+}
+
+.btn-ketchup:hover {
+    background-color: #9b0a29;
+}
+
+.btn-ketchup:active {
+    background-color: #770820;
+}
+
+.bg-guacamole {
+    background-color: #6B8E23;
+}
+
+.bg-barbacoa {
+    background-color: #5C3317;
+  }
+  
+  .bg-mayonesa {
+    background-color: #FFFDD0;
+  }
+  
+  .bg-cheddar {
+    background-color: #FFA600;
+  }
+  
+  .bg-salsa-queso {
+    background-color: #F5C71A;
+  }
+  
+  .bg-salsa-bbq-blanca {
+    background-color: #F4F1DE;
+  }
+  
+  .bg-salsa-chipotle {
+    background-color: #8B4513;
+  }
+  
+  .bg-salsa-ranch {
+    background-color: #F0EAD6;
+  }
+
+/* Encabezado */
+.navbar-brand {
+    font-family: 'Sigmar One', cursive;
+}
+
+.navbar, .offcanvas-header{
+    background-color: #ff7272;
+}
+
+.offcanvas-body {
+    background-color: #f3d69f;
+}
+
+.offcanvas-title, .container p {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.nav-item {
+    font-weight: 700;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item:hover {
+    background-color: #d86060;
+}
+.nav-item:active {
+    background-color: #a74949;
+    color: aliceblue;
+}
+
+.navbar-nav {
+    background-color: #ff7272;
+    border-radius: 10px;
+}
+
+.nav-img {
+    width: 60px;
+    object-fit: cover;
+}
+
+.nav-link:hover + .nav-img {
+    animation: swing 2s infinite ease-in-out;
+}
+
+.nav-link:active + .nav-img {
+    animation: spinAndScale 0.5s linear infinite;
+}
+
+.nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+textarea {
+    resize: none;
+}
+
+.list-group, .list-group-flush, .list-group-item {
+    background: none !important;
+    border-bottom: 1px #770820 solid;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spinAndScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(720deg) scale(0.9);
+    }
+}
